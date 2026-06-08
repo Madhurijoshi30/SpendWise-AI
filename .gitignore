@@ -1,0 +1,30 @@
+# Dependencies — never push these
+node_modules/
+
+# Secret keys — NEVER push these (covers root, client, and server)
+.env
+.env.local
+.env.production
+mern-client/.env*
+mern-server/.env*
+
+*.local
+
+# Build output — generated files not needed on GitHub
+dist/
+dist-ssr/
+build/
+
+# Package manager logs — local troubleshooting files
+*.log
+npm-debug.log*
+
+# VS Code settings — share extension recommendations, ignore everything else
+.vscode/*
+!.vscode/extensions.json
+
+# System trash files — macOS and Windows metadata
+.DS_Store
+Thumbs.db
+
+README.md

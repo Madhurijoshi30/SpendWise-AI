@@ -23,7 +23,7 @@ export default function QuickAdd() {
     setParsing(true);
     try {
       const transaction = await addTransaction(text);
-      toast.success(`Added $${transaction.amount} - ${transaction.category}`);
+      toast.success(`Added ₹${transaction.amount} - ${transaction.category}`);
       setText('');
     } catch (error: any) {
       toast.error(error.response?.data?.message || 'Failed to add expense');
@@ -48,7 +48,7 @@ export default function QuickAdd() {
     }
 
     const recognition = new SpeechRecognition();
-    recognition.lang = 'en-US';
+    recognition.lang = 'en-IN';
     recognition.onresult = (e: any) => {
       setText(e.results[0][0].transcript);
       setListening(false);

@@ -20,7 +20,7 @@ export default function ExpenseTrend() {
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
-    return date.toLocaleDateString('en-US', { day: 'numeric', month: 'short' });
+    return date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
   };
 
   const CustomTooltip = ({ active, payload, label }: any) => {

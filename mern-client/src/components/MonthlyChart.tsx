@@ -21,7 +21,7 @@ export default function MonthlyChart() {
   const formatMonth = (monthStr: string) => {
     const [year, month] = monthStr.split('-');
     const date = new Date(parseInt(year), parseInt(month) - 1);
-    return date.toLocaleDateString('en-US', { month: 'short' });
+    return date.toLocaleDateString('en-IN', { month: 'short' });
   };
 
   const CustomTooltip = ({ active, payload, label }: any) => {
